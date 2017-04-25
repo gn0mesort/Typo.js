@@ -1,3 +1,5 @@
+(get other dictionaries with git clone https://chromium.googlesource.com/chromium/deps/hunspell_dictionaries)
+
 en_US Hunspell Dictionary
 Version 2016.01.19
 Tue Jan 19 17:07:49 2016 -0500 [a535654]
