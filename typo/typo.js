@@ -113,8 +113,8 @@ function Typo(dictionary, affData, wordsData, settings = {}) {
 				path = "typo/dictionaries";
 			}
 			
-			if (!affData) readDataFile(chrome.extension.getURL(`${path}/${dictionary}/${dictionary}.aff`), setAffData);
-			if (!wordsData) readDataFile(chrome.extension.getURL(`${path}/${dictionary}/${dictionary}.dic`), setWordsData);
+			if (!affData) readDataFile(chrome.extension.getURL(`${path}/${dictionary}.aff`), setAffData);
+			if (!wordsData) readDataFile(chrome.extension.getURL(`${path}/${dictionary}.dic`), setWordsData);
 		}
 		else {
 			if (settings.dictionaryPath) {
@@ -127,8 +127,8 @@ function Typo(dictionary, affData, wordsData, settings = {}) {
 				path = './dictionaries';
 			}
 			
-			if (!affData) readDataFile(`${path}/${dictionary}/${dictionary}.aff`, setAffData);
-			if (!wordsData) readDataFile(`${path}/${dictionary}/${dictionary}.dic`, setWordsData);
+			if (!affData) readDataFile(`${path}/${dictionary}.aff`, setAffData);
+			if (!wordsData) readDataFile(`${path}/${dictionary}.dic`, setWordsData);
 		}
 	}
 
