@@ -73,7 +73,7 @@ function loadTypo(dicName, affPath, dicPath) {
 
 function Typo(dictionary, affData, wordsData, settings = {}) {
     this.dictionary = null;
-
+    this.settings = settings
     this.rules = {};
     this.dictionaryTable = {};
 
